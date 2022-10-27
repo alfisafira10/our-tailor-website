@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Quicksand:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    object-position: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.jumbotron img {
+    width: 50%;
+    max-width: 1000px;
+}
+
+.drop-down {
+    position: absolute;
+    top: 27.2px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.drop-down .garis {
+    height: 3px;
+    background-color: #5e323e;
+}
+
+nav {
+    background-color: #5e323e;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    border-bottom: 3px solid white;
+}
+
+main {
+    overflow: auto;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', sans-serif;
+    color: #5e323e;
+}
+
+h1 {
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 35px;
+    margin: 0;
+}
+
+#tagline p {
+    max-width: 650px;
+}
+
+#tagline {
+    padding: 30px;
+    overflow: auto;
+}
+
+.gambar-tagline {
+    float: left;
+    padding-left: 20px;
+}
+
+.content-tagline {
+    float: right;
+    padding-top: 160px;
+    padding-right: 45px;
+}
+
+.order-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #5e323e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.order-btn:hover {
+    background-color: #ffc183;
+    color: #5e323e;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#layanan,
+#tutorial,
+#profil {
+    padding-bottom: 20px;
+}
+
+.service-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-container-service {
+    display: flex;
+
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.card {
+    flex-basis: 29%;
+
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px 3px rgba(94,50,62,1);
+}
+
+.tutorial-image {
+    width: 60%;
+    max-height: 200px;
+    padding-top: 25px;
+}
+
+.flex-container-tutorial {
+    display: flex;
+
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+.card-tutor {
+    flex-basis: 20%;
+
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#profil img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+aside {
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn {
+    width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #5e323e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #ffc183;
+    color: #5e323e;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #5e323e;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .jumbotron img {
+        height: 70px;
+    }
+
+    .drop-down {
+        display: flex;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    nav .menu.active {
+        display: flex;
+        position: sticky;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .gambar-tagline {
+        padding: 0;
+    }
+
+    .gambar-tagline img {
+        width: 100%;
+    }
+
+    .content-tagline {
+        padding: 10px;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    .flex-container-service {
+        height: 950px;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .flex-container-tutorial {
+        overflow: auto;
+    }
+}
